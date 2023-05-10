@@ -1,0 +1,50 @@
+ALGORITHM devoirGomyCode
+VAR
+    phrase : STRING;
+    sizePh : INTEGER;
+    sizeMt : INTEGER;
+    sizeVy : INTEGER;
+    i : INTEGER
+    // voyelle = ['a','e,''o,''u,','i,','y'];
+BEGIN
+// entrer la phrase
+    WRITE('Entrer votre phrase');
+    READ(phrase);
+
+    //taille de la phrase
+    sizePh =  phrase.length;
+        // .length permet de recuperer la taille de la phrase
+
+
+    // nombre de mot
+        // separer les mots et les mettre dans un tableau
+        // les compter
+        sizeMt =  explode(' ',phrase).length()
+            
+
+
+        // nombre de voyelle
+            // recuperer toutes les lettres de la phrase
+        allLetter = str_split(phrase);
+            // faire un boucle qui compare les lettres à un list predefini
+            i = 0;
+        WHILE ( allLetter.length != '.' ) DO
+
+            // ajouter 1 à i si allLetter[]  == element dans mon tableau
+            IF (allLetter[i] == 'a' || 'e'|| 'o'|| 'u'|| 'i' || 'y' ) THEN
+                i ++;
+            END_IF
+
+            // incrementation de i
+            // i++;
+        END_WHILE
+
+        sizeVy = i;
+
+
+    
+END
+
+taille de la phrase
+nombre de mots
+nombre de voyelle
